@@ -1,0 +1,45 @@
+*{
+margin: 0;
+padding: 0;
+
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    }
+
+.boasVindas{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight:600;
+    font-size: 4em;
+}
+
+.texto >p{
+
+    font-family: 'Pixelify Sans', sans-serif;
+font-weight: 400;
+font-size: 1.5em;
+}
+
+.texto b{
+   color: blueviolet;
+}
+
+
+.boasVindas>b{
+
+color: rgb(57, 10, 99);
+
+}
+
+.boasVindas{
+
+  
+}
+.texto{
+margin: 2%;
+
+}
