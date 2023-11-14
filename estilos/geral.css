@@ -41,5 +41,33 @@ color: rgb(57, 10, 99);
 }
 .texto{
 margin: 2%;
+justify-content: left;
+display: flex;
+flex-direction: column;
+width: 70%;
+
+}
+
+.player{
+    justify-content: right;
+    display: flex;
+    margin: 5%;
+justify-content: space-around;
+    width: 30%;
+    
+
+}
+
+.player img{
+
+    max-height: 10%;
+}
+
+.topo{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
 
 }
