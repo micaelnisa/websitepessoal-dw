@@ -1,73 +1,148 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 
 
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     background-color: pink;
-    }
+    overflow: hidden;
+}
 
-.boasVindas{
+.boasVindas {
     font-family: 'Pixelify Sans', sans-serif;
-    font-weight:600;
+    font-weight: 600;
     font-size: 4em;
 }
 
-.texto >p{
+.texto>p {
 
     font-family: 'Pixelify Sans', sans-serif;
-font-weight: 400;
-font-size: 1.5em;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
-.texto b{
-   color: blueviolet;
+.texto b {
+    color: blueviolet;
 }
 
 
-.boasVindas>b{
+.boasVindas>b {
 
-color: rgb(57, 10, 99);
-
-}
-
-.boasVindas{
-
-  
-}
-.texto{
-margin: 2%;
-justify-content: left;
-display: flex;
-flex-direction: column;
-width: 70%;
+    color: rgb(57, 10, 99);
 
 }
 
-.player{
+.boasVindas {}
+
+.texto {
+    margin: 2%;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+.player {
     justify-content: right;
     display: flex;
     margin: 5%;
-justify-content: space-around;
+    justify-content: space-around;
     width: 30%;
-    
+
 
 }
 
-.player img{
+.player img {
 
     max-height: 10%;
 }
 
-.topo{
+.topo {
 
     display: flex;
     flex-direction: row;
 
     width: 100vw;
+
+}
+
+
+.facto {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    /* Ajusta a largura ao tamanho do conteúdo */
+    height: fit-content;
+    /* Ajusta a altura ao tamanho do conteúdo */
+    width: 12%;
+}
+
+.image {
+    cursor: pointer;
+    width: 100%;
+}
+
+.facto .text {
+    display: none;
+    position: relative;
+    /* Alterada para relativa para ajustar o tamanho ao conteúdo */
+    font-size: 16px;
+    transition: ease-in-out 0.2s;
+}
+
+.text {
+    padding: 5%;
+    border-style: dashed;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.facto:hover .text {
+    transition: ease-in-out 1s;
+    display: flex;
+    transform: scale(1.05);
+}
+
+
+
+
+.movendo {
+
+    position: absolute;
+    animation: mover 0.5s infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    10% {
+        transform: scale(2, 2);
+    }
+
+
+
+}
+
+
+.rodar-e-mover {
+
+
+    position: absolute;
+    animation: rodarMover 10s linear infinite;
+}
+
+@keyframes rodarMover {
+
+    100% {
+        transform: rotate(360deg);
+
+    }
 
 }
