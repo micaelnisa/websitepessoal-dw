@@ -1,26 +1,65 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var factos = document.querySelectorAll(".facto");
+    let factos = document.querySelectorAll(".facto");
 
-    document.addEventListener("click", function (event) {
-        // Embaralhe as divs "facto" aleatoriamente
-        var factosArray = Array.from(factos);
+    document.querySelector(".factos").addEventListener("click", function (event) {
+     
+        let factosArray = Array.from(factos);
         factosArray.sort(function () {
             return 0.5 - Math.random();
         });
 
-        // Encontre a primeira div "facto" que não está sendo exibida
-        var randomFacto = factosArray.find(function (facto) {
+       
+        let randomFacto = factosArray.find(function (facto) {
             return facto.style.display !== "block";
         });
 
         if (randomFacto) {
-            // Centralize a posição da div "facto" no ponto do clique
+          
             randomFacto.style.left = event.clientX + "px";
             randomFacto.style.top = event.clientY + "px";
-            // Exiba a div "facto"
+           
             randomFacto.style.display = "block";
         }
     });
 });
 
 
+
+        let index = 0;
+        let videos = document.querySelectorAll('.fundo video');
+        let clickCount = 0;
+
+        function playNextVideo() {
+            
+            clickCount++;
+
+            
+            if (clickCount > 3) {
+                // Oculta todos os vídeos
+                videos.forEach(function (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.style.display = 'none';
+                });
+
+               
+                clickCount = 0;
+            } else {
+                // Pausa e reinicia todos os vídeos
+                videos.forEach(function (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.style.display = 'none';
+                });
+
+                // Atualiza o índice para o próximo vídeo
+                index  = (index  + 1) % videos.length;
+
+                // Mostra o próximo vídeo
+                videos[index].style.display = 'block';
+
+                // Ativa o som e reproduz o vídeo
+                videos[index].muted = false;
+                videos[index] .play();
+            }
+        }

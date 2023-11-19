@@ -12,6 +12,24 @@ body {
     overflow: hidden;
 }
 
+.fundo>video{
+
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra toda a janela */
+    display: none;
+
+}
+
+.rosa{
+
+    background-color: pink;
+}
+
 .boasVindas {
     font-family: 'Pixelify Sans', sans-serif;
     font-weight: 600;
@@ -25,16 +43,13 @@ body {
     font-size: 1.5em;
 }
 
-.texto b {
-    color: blueviolet;
+.texto b{
+    color: #551a8b;
 }
 
 
-.boasVindas>b {
 
-    color: rgb(57, 10, 99);
 
-}
 
 .boasVindas {}
 
@@ -43,7 +58,11 @@ body {
     justify-content: left;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 70vw;
+    height: 25%;
+ 
+
+    
 
 }
 
@@ -52,23 +71,44 @@ body {
     display: flex;
     margin: 5%;
     justify-content: space-around;
-    width: 30%;
+    width: 20vw;
 
 
 }
 
 .player img {
 
-    max-height: 10%;
+    max-height: 100%;
+    cursor: pointer;
 }
 
+.player img:hover{
+
+    transform: scale(1.10);
+}
+
+
+
+
+.factos{
+
+   
+cursor: pointer;
+   height: 75%;
+
+
+}
 .topo {
 
     display: flex;
     flex-direction: row;
-
+position: relative;
+top: 0;
     width: 100vw;
-
+    height: 25vh;
+   /* background-color: rgba(255, 193, 203, 0.9); /*
+ Cor de fundo com transparência (RGBA) 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
 }
 
 
@@ -90,9 +130,9 @@ body {
 .facto .text {
     display: none;
     position: relative;
-    /* Alterada para relativa para ajustar o tamanho ao conteúdo */
-    font-size: 16px;
+    font-size: 12px;
     transition: ease-in-out 0.2s;
+
 }
 
 .text {
@@ -100,6 +140,8 @@ body {
     border-style: dashed;
     background-color: aliceblue;
     text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    
 }
 
 .facto:hover .text {

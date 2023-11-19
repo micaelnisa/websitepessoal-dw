@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fundo {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rosa {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            cursor: pointer;
+            transition: transform 1s ease-in-out;
+        }
+
+        video {
+            width: 30%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+    <title>Changing Content</title>
+</head>
+<body onclick="changeContent()">
+    <div class="fundo">
+        <div class="rosa" ></div>
+        <video id="video1" src="src/brogesso.mp4" autoplay loop muted></video>
+        <video id="video2" src="src/brogesso.mp4" loop></video>
+        <video id="video3" src="src/brogesso.mp4" loop></video>
+    </div>
+
+    <script>
+        var currentIndex = 0;
+        var elements = document.querySelectorAll('.fundo > *');
+
+        function changeContent() {
+            // Esconde o elemento atual
+            elements[currentIndex].style.opacity = 0;
+
+            // Mostra o próximo elemento
+            currentIndex = (currentIndex + 1) % elements.length;
+            elements[currentIndex].style.opacity = 1;
+
+            // Reinicia quando atinge o final da lista
+            if (currentIndex === 0) {
+                elements.forEach(function (element) {
+                    element.style.opacity = 0;
+                });
+                elements[currentIndex].style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>
