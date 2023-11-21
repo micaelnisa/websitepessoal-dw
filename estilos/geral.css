@@ -54,12 +54,14 @@ body {
 .boasVindas {}
 
 .texto {
-    margin: 2%;
+    
     justify-content: left;
     display: flex;
     flex-direction: column;
-    width: 70vw;
-    height: 25%;
+    width: 75vw;
+
+    margin-left: 2%;
+    
  
 
     
@@ -69,9 +71,9 @@ body {
 .player {
     justify-content: right;
     display: flex;
-    margin: 5%;
     justify-content: space-around;
-    width: 20vw;
+    width: 15vw;
+
     
 
 
@@ -79,10 +81,14 @@ body {
 
 .player img {
 
-    height: 100%;
-    height: 100%;
+    height:calc(35% - 4%);
+    width: calc(35% - 4%);
+  
     cursor: pointer;
-    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2%;
    
 }
 
@@ -106,6 +112,7 @@ cursor: pointer;
 
     display: flex;
     flex-direction: row;
+    align-items: center;
 position: relative;
 margin: 2%;
     width: calc(100vw - 4%);
