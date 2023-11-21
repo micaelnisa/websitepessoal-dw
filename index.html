@@ -9,61 +9,102 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="estilos/geral.css">
+    <link rel="stylesheet" type="text/css" href="wordart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
 </head>
 
 <body>
-<div class="fundo">
+    <div class="fundo">
 
 
         <video id="video1" src="src/recluso.mp4" loop></video>
         <video id="video2" src="src/brogesso.mp4" loop></video>
         <video id="video3" src="src/funkytown.mp4" loop></video>
 
-</div>
-    
-    <div class="topo">
+    </div>
 
+
+    <div class="topo">
         <div class="texto">
-            <h1 class="boasVindas"> Olá 👋
-                sou o <a href="https://www.instagram.com/micaelnisa/" target="_blank">Micael</a> 🤠</h1>
-            <p> Bem-vindo ao meu <b>WebSite Pessoal</b>💻
+            <h1 class="boasVindas"> OLÁ SOU O <a href="https://www.instagram.com/micaelnisa/" target="_blank">MICAEL</a></h1>
+            <p> BEM-VINDO AO MEU <b>WEBSITE PESSOAL</b>💻
                 <br> clica algures para saberes um facto sobre mim!🫂
             </p>
+
         </div>
 
         <div class="player">
-            <img id="trocar" src="src/music.svg" alt="">
-            <img src="src/som.svg" alt="">
+            <img id="trocar" src="src/disco2.svg" alt="">
+            <img id="volumeControl" src="src/som.svg" alt="" onclick="toggleVolume()">
         </div>
-
-
-
     </div>
 
-    <div  class="factos">
-        
-        <div class="facto" id="facto1">
-            <img class="image-facto" src="../src/camara.png" alt="Image 1">
+   
+
+
+    <div class="factos">
+
+        <div class="facto " id="facto1">
+            <div class=" animate__animated animate__headShake ">
+                <img class="image-facto" src="../src/camara.png" alt="Image 1">
+            </div>
             <p class="text">Gosto de fotografia, a minha câmara é uma sony a6000</p>
         </div>
 
         <div class="facto" id="facto2">
-            <img class="image-facto" src="../src/aquario.png" alt="Image 1">
+            <div class=" animate__animated animate__headShake ">
+                <img class="image-facto" src="../src/aquario.png" alt="Image 2">
+            </div>
             <p class="text">O meu signo é aquario, <br>
                 não sei o que isso signigica</p>
         </div>
 
         <div class="facto" id="facto3">
-            <img class="image-facto" src="../src/clarinete.png" alt="Image 1">
+            <div class=" animate__animated animate__swing">
+
+                <img class="image-facto" src="../src/clarinete.png" alt="Image 3">
+            </div>
             <p class="text">Eu toco clarinete desde 2009</p>
+
         </div>
+
+        <div class="facto" id="facto4">
+            <div class=" animate__animated animate__swing">
+                <a href="https://student.dei.uc.pt/~micaelnisa/" target="_blank"><img class="image-facto"
+                        src="../src/dei.png" alt="Image 4"></a>
+            </div>
+            <p class="text">Estou no mestrado de Design e Multimédia,
+                <br> clica aqui para aceder à minha área do DEI</p>
+        </div>
+
+
+        <div class="facto" id="facto5">
+            <div class=" animate__animated animate__swing">
+                <img class="image-facto" src="../src/aguieira.gif" alt="Image 5">
+            </div>
+            <p class="text"> Sou nascido e vivo numa freguesia chamada Aguieira
+                no Concelho de Nelas</p>
+        </div>
+
+        <div class="facto" id="facto6">
+            <div class=" animate__animated animate__swing">
+                <img class="image-facto" src="../src/faisca.png" alt="Image 6">
+            </div>
+            <p class="text">O meu filme preferido é o Carros</p>
+        </div>
+
     </div>
 
-</div>
+    </div>
 
 
 
