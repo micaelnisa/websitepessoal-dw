@@ -8,8 +8,12 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 192, 243);
+    background-color: rgb(50, 46, 246);
     overflow: hidden;
+    /*
+    background-image: url("/src/pandego.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 .fundo>video{
@@ -18,17 +22,13 @@ body {
     z-index: -1;
     top:0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover; /* Garante que o vídeo cubra toda a janela */
     display: none;
 
 }
 
-.rosa{
-
-    background-color: pink;
-}
 
 .boasVindas {
     font-family: 'IMPACT', sans-serif;
@@ -74,6 +74,7 @@ text-align: left;
     flex-direction: column;
     width: 47vw;
     height: 20vh;
+    filter: drop-shadow(5px 5px 5px rgb(43, 43, 43));
 
 
 
@@ -90,7 +91,7 @@ text-align: left;
 }
 
 .player img {
-    filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 1));
+    filter: drop-shadow(5px 5px 5px darkred);
     height:100%;
     width: 15%;
   
@@ -137,7 +138,7 @@ margin: 1%;
 .factos{
 
    
-    cursor: pointer;
+  
        height: 75%;
     
     
@@ -155,7 +156,7 @@ margin: 1%;
 }
 
 .image-facto {
-    cursor: pointer;
+    
     width: 100%;
    
 }
@@ -187,46 +188,15 @@ margin: 1%;
 
 
 
-.movendo {
-
-    position: absolute;
-    animation: mover 0.5s infinite;
-}
-
-@keyframes mover {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    10% {
-        transform: scale(2, 2);
-    }
 
 
 
-}
-
-
-.rodar-e-mover {
-
-
-    position: absolute;
-    animation: rodar 10s linear infinite;
-}
-
-.rodar-e-mover :nth-child(2){
 
 
 
-}
 
-@keyframes rodar{
 
-    100% {
-        transform: rotate(360deg);
 
-    }
 
-}
 
 

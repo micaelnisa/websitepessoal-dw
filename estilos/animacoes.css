@@ -1,0 +1,79 @@
+.rodar {
+
+    position: absolute;
+    animation: rodar 1.5s linear infinite;
+}
+
+@keyframes batida {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    10% {
+        transform: scale(1.5, 1.5);
+    }
+
+
+
+}
+
+.batida {
+
+    position: absolute;
+    animation: batida 0.5s linear infinite;
+}
+
+
+
+
+
+
+
+
+.movendo :nth-child(2){
+  animation: mover 20s linear infinite;
+}
+
+
+
+
+.balada{
+
+    position: absolute;
+    animation: balada 50s linear infinite;
+
+}
+
+@keyframes rodar{
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+@keyframes balada{
+
+      0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+
+  25% {
+    transform: translateX(100px) translateY(0) rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(-100px) translateY(-100px) rotate(180deg);
+  }
+
+  75% {
+    transform: translateX(0) translateY(-100px) rotate(270deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(360deg);
+  }
+
+    }

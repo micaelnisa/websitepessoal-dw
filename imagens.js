@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (isOutsideFactoTopo) {
             let factosArray = Array.from(factos);
             factosArray.sort(function () {
-                return 0.5 - Math.random();
+                return 0.7 - Math.random();
             });
 
             let randomFacto = factosArray.find(function (facto) {
@@ -25,12 +25,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
+  
+
     //MUDA O ESTILO
     let index = 0;
     let videos = document.querySelectorAll('.fundo video');
     let clickCount = 0;
 
-    let movimentosSexy = ["movendo", "rodar-e-mover", "imagem-facto"];
+    let movimentosSexy = ["batida", "rodar", "balada"];
 
     let botaoMudarVideo = document.getElementById("trocar");
 
