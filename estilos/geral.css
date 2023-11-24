@@ -192,6 +192,8 @@ body {
     font-weight: lighter;
     font-family: Impact, sans-serif;
     z-index: 2;
+    position: absolute;
+    top:-11vh;
 
 }
 
