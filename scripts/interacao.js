@@ -4,10 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ADICIONA FACTOS
     document.addEventListener("click", function (event) {
-        // Verifica se o clique não ocorreu dentro de um elemento com as classes .facto ou .topo
-        let isOutsideFactoTopo = event.target.closest('.facto, .player>img, .texto') === null;
+        let ForaLimites = event.target.closest('.facto, .player>img, .texto') === null;
 
-        if (isOutsideFactoTopo) {
+        if (ForaLimites) {
             let factosArray = Array.from(factos);
             factosArray.sort(function () {
                 return 0.7 - Math.random();
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let videos = document.querySelectorAll('.fundo video');
     let clickCount = 0;
 
-    let movimentosSexy = ["batida", "rodar", "balada"];
+    let movimentos = ["batida", "rodar", "balada"];
 
     let botaoMudarVideo = document.getElementById("trocar");
 
@@ -42,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         clickCount++;
 
         imagensFactos.forEach(function (imagensFactos) {
-            imagensFactos.classList.add(movimentosSexy[clickCount - 1])
-            imagensFactos.classList.remove(movimentosSexy[clickCount - 2])
+            imagensFactos.classList.add(movimentos[clickCount - 1])
+            imagensFactos.classList.remove(movimentos[clickCount - 2])
         })
 
 
