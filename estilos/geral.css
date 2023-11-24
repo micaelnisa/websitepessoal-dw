@@ -5,6 +5,12 @@
 
 }
 
+@font-face {
+    font-family: Impact;
+    src: url('../src/IMPACT.TTF');
+}
+
+
 body {
     width: 100vw;
     height: 100vh;
@@ -33,7 +39,7 @@ body {
 
 .boasVindas {
 
-    font-family: 'IMPACT', sans-serif;
+    font-family: Impact, sans-serif;
     font-weight: 1000;
     color: green;
     font-size: 4em;
@@ -187,7 +193,7 @@ body {
     background-color: aliceblue;
     text-align: center;
     font-weight: lighter;
-    font-family: 'Impact', sans-serif;
+    font-family: Impact, sans-serif;
     z-index: 2;
 
 }
