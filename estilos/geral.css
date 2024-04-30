@@ -12,14 +12,14 @@
 
 
 body {
+    margin: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgb(50, 46, 246);
     overflow: hidden;
-    /*
-    background-image: url("/src/pandego.png");
-    background-repeat: no-repeat;
-    background-size: cover;*/
+    background-image: url("/src/campanha.jpg");
+    background-repeat:round;
+    background-size: cover; /* ou background-size: contain; */
 }
 
 .fundo>video {
