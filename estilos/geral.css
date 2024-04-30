@@ -17,9 +17,9 @@ body {
     height: 100vh;
     /*background-color: rgb(50, 46, 246);*/
     overflow: hidden;
-    background-image: url("/src/campanha.jpg");
+    background-image: url("../src/campanha.jpg");
     background-repeat:round;
-    background-size: cover; /* ou background-size: contain; */
+    background-size: cover;
 }
 
 .fundo>video {
